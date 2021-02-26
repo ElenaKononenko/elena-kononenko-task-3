@@ -1,0 +1,24 @@
+  <thead>
+    <tr>
+    <th>#</th>
+    <th >Alpha two code</th>
+    <th>Country</th>
+    <th >Domains</th>
+    <th>Name</th>
+    <th>Web pages</th>
+    <th >State province</th>
+    <th >Save</th>
+  </tr> 
+ </thead>
+  {{#each this}}
+    <tr>
+   <th>{{add @index 1}}</th>
+    <th >{{alpha_two_code}}</th>
+    <th>{{country}}</th>
+    <th >{{domains}}</th>
+    <th>{{name}}</th>
+    <th><a href="web_pages">{{web_pages}}</a></th>
+    <th >{{state-province}}</th>
+    <th > <input type="checkbox" name="checkbox" id="checkbox" /></th>
+  </tr> 
+{{/each}}
