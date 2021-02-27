@@ -1,3 +1,4 @@
+ <table class="table" id="table">
   <thead>
     <tr>
     <th>#</th>
@@ -11,14 +12,20 @@
   </tr> 
  </thead>
   {{#each this}}
-    <tr>
+    <tr class="table__tr">
    <th>{{add @index 1}}</th>
     <th >{{alpha_two_code}}</th>
     <th>{{country}}</th>
     <th >{{domains}}</th>
     <th>{{name}}</th>
-    <th><a href="web_pages">{{web_pages}}</a></th>
+    <th><a class="link" target="_blank" href={{web_pages}}>{{web_pages}}</a></th>
     <th >{{state-province}}</th>
-    <th > <input type="checkbox" name="checkbox" id="checkbox" /></th>
-  </tr> 
+
+{{#if check}}
+    <th > <input type="checkbox" name="checkbox" class="checkbox" checked="checked"   id={{ @index}}></th>
+{{else}}
+    <th > <input type="checkbox" name="checkbox" class="checkbox" id={{ @index}}></th>
+{{/if}}
+   </tr> 
 {{/each}}
+   </table>

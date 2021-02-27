@@ -14,8 +14,10 @@
   </head>
 
   <body>
-    <section>
+    <section class="tableSection">
       <div class="container">
+        <h1 class="tableSection__tittle">University Domains and Names</h1>
+
         <form class="form__search" id="form__search">
           <input
             id="searchInput"
@@ -24,12 +26,18 @@
             type="text"
             placeholder="Поиск по стране"
           />
-          <button type="submit" id="button__search">Отправить</button>
-          <button type="button" id="button__clear">Сброс</button>
-          <p>ukraine</p>
+          <div class="form__search__button">
+            <button class="button" type="submit" id="button__search">
+              Отправить
+            </button>
+            <button class="button" type="button" id="button__clear">
+              Сброс
+            </button>
+            <p class="form__search__button__error" id="errorText"></p>
+          </div>
+          <div class="span"><span class="cout" id="cout">0</span></div>
         </form>
-
-        <table id="table" class="table"></table>
+        <div id="tableWrappler"></div>
       </div>
     </section>
   </body>

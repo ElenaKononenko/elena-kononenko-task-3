@@ -4,6 +4,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.33;
+  color: #532703;
 }
 
 .list {
@@ -12,57 +13,10 @@ body {
   margin: 0;
 }
 .section {
-  width: 100%;
+  margin-top: 10px;
 }
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 40px;
-}
-.is_hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid purple;
-}
-
-thead th:nth-child(1) {
-  width: 3%;
-}
-
-thead th:nth-child(2) {
-  width: 7%;
-}
-
-thead th:nth-child(3) {
-  width: 10%;
-}
-
-thead th:nth-child(4) {
-  width: 20%;
-}
-
-thead th:nth-child(5) {
-  width: 20%;
-}
-thead th:nth-child(6) {
-  width: 25%;
-}
-thead th:nth-child(7) {
-  width: 10%;
-}
-thead th:nth-child(8) {
-  width: 5%;
-}
-th,
-td {
-  padding: 20px;
 }
