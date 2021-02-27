@@ -39,7 +39,9 @@ function onClear() {
 }
 
 function onFetch(value) {
-  fetch(`http://universities.hipolabs.com/search?country=${value}`)
+  fetch(`http://universities.hipolabs.com/search?country=${value}`, {
+    referrerPolicy: 'unsafe-url',
+  })
     .then(response => {
       return response.json();
     })
